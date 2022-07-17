@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178132094-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-178132094-1");
+  </script>
+
+  <meta charset="UTF-8" />
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+  <meta name="viewport" content="width=1024" />
+  <title>RobustBench: Adversarial robustness benchmark</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
+  <script src="https://kit.fontawesome.com/b939870cfb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.foundation.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.foundation.min.js"></script>
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"
+          >GraphFramEx</a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#leaderboard">Leaderboards</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://arxiv.org/pdf/2206.09677.pdf">Paper</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://github.com/DS3Lab/GraphFramEx">Code</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#contribute">Add new method</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <!-- <hr class="toprule" /> -->
+  <header>
+    <div class="header-block container">
+      <div class="logo"><img src="fig/logo_graphframex.png" alt="logo" /></div>
+      <div class="title">GraphFramEx</div>
+      <div class="description">
+        A systematic evaluation framework for explainability methods on Graph Neural Networks
+      </div>
+    </div>
+  </header>
+  <!-- <hr class="toprule" /> -->
+
+  <div class="container">
+    <section id="introduction">
+      <div class="overview">
+        <p class="doublealign">
+          The goal of <strong>GraphFramEx</strong> is to systematically evaluate 
+          methods that generate explanations for predictions 
+          of graph neural networks (GNNs). 
+          GraphFramEx proposes a unique metric, the characterization score, which combines the
+          fidelity measures, and classifies explanations based on their quality of being sufficient
+          or necessary. We scope ourselves to node classification tasks and compare the most
+          representative techniques in the field of input-level explainability for GNNs. 
+
+          Why is it important to have a rigorous comparison of explainability methods? 
+          The past decade has witnessed the rise of many 
+          <a href="https://github.com/flyingdoog/awesome-graph-explainability-papers">new methods</a>
+           to explain GNN predictions 
+          , but it is still unclear how to compare them and how to evalute their <em>quality</em>.
+          Additionally,
+          we open source the
+          <a href="https://github.com/DS3Lab/GraphFramEx">GraphFramEx library</a>
+          that compares diverse explainability methods used for the leaderboard to facilitate their
+          usage for downstream applications. <br><br>
+
+          To add methods to this comparison and enrich our knowledge on explainability,
+          we also welcome external methods. To add your method, please go to the 
+
+
+
+        </p>
+        <div class="flexbox-container features">
+          <div class="element">
+            <div class="icon">
+              <img src="https://img.icons8.com/wired/100/000000/leaderboard.png" />
+            </div>
+            <p>
+              Up-to-date leaderboard based <br />
+              on 10+ explainability methods
+            </p>
+          </div>
+          <div class="element">
+            <div class="icon">
+              <img src="https://img.icons8.com/external-phatplus-lineal-phatplus/344/external-method-ecommerce-phatplus-lineal-phatplus.png"/>
+            </div>
+            <p>
+              Integrate your new explainability method <br />and learn 
+              how competitive your method is!
+            </p>
+          </div>
+        </div>
+
+      <div class="details">
+        <div class="box usage">
+          <p>GraphFramEx</p>
+          <div class="divider">
+            <hr />
+          </div>
+          Check out our
+          <a href="https://github.com/DS3Lab/GraphFramEx">Jupyter notebooks</a>
+          for simulations and tutorials.
+        </div>
+        <div class="box images">
+          <p>Analysis</p>
+          <div class="divider">
+            <hr />
+          </div>
+          Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis.
+          <div class="vspace10"></div>
+          
+          <select class="fig-options", id="chooseFocus", name="chooseFocus">
+            <option data-Focus="Phenomenon">Phenomenon</option>
+            <option data-Focus="Model">Model</option>
+          </select>
+          
+          <select class="fig-options", id="chooseMask", name="hooseMask">
+            <option data-maskType="Hard mask">Hard</option>
+            <option data-maskType="Soft mask">Soft</option>
+          </select>
+          
+          <div class="image">
+            <img id="img-change", src="fig/type_expl_Phenomenon_Hard.png">
+          </div>
+
+        </div>
+      </div>
+      <div class="vspace10"></div>
+    </section>
+
+
+    <div id="leaderboard" class="container button-list">
+      <div class="heading">
+        <u>
+          Available Leaderboards
+        </u>
+      </div>
+      <a class="btn btn-secondary" href="#div_real_leaderboard_full_data">Real dataset</a>
+      </div>
+
+
+    <section class="container" id="div_real_leaderboard_full_data">
+      <div class="heading">
+        <p>
+<!--          <div style="opacity:0;">1<br>1<br>1<br>1</div> &lt;!&ndash; Needed to introduce a margin for the navigation bar between leaderboards &ndash;&gt;-->
+          Leaderboard:
+          <span class="heading-math">Real data</span>,
+          focus: Phenomenon, mask: Hard, size: 10 edges, Avg over all datasets
+        </p>
+      </div>
+
+      <div id="div_real_leaderboard_full_data"></div>
+    </section>
+
+    
+
+    <div class="vspace30"></div>
+
+    <section id="citation">
+      <div class="heading">
+        <p>Citation</p>
+      </div>
+      Consider citing our whitepaper if you want to reference our leaderboard or if you are using the method rankings or our evaluation protocol
+      GraphFramEx:
+      <!-- HTML generated using hilite.me -->
+      <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.0em .0em .0em .0em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #555555; font-weight: bold">@article</span>{amara2022graphframex,
+    title<span style="color: #333333">=</span>{GraphFramEx: Towards Systematic Evaluation of Explainability Methods for Graph Neural Networks},
+    author<span style="color: #333333">=</span>{Amara, Kenza <span style="color: #000000; font-weight: bold">and</span> Ying, Rex <span style="color: #000000; font-weight: bold">and</span> Zhang, Zitao <span style="color: #000000; font-weight: bold">and</span>
+    Han, Zhihao <span style="color: #000000; font-weight: bold">and</span> Shan, Yinan <span style="color: #000000; font-weight: bold">and</span> Brandes, Ulrik <span style="color: #000000; font-weight: bold">and</span> Schemm, Sebastian <span style="color: #000000; font-weight: bold">and</span> Zhang, Ce},
+    journal<span style="color: #333333">=</span>{arXiv preprint arXiv:2206.09677},
+    year<span style="color: #333333">=</span>{2022}
+}</pre>
+      </div>
+
+    </section>
+
+    <div class="vspace50"></div>
+
+    <section id="Add new method">
+      <div class="details">
+        <div class="box2">
+          <p>Add your method to GraphFramEx!</p>
+          <div class="divider">
+            <hr />
+          </div>
+          Add your method to GraphFramEx and learn how your method ranks among the existing explainers of GNNs.
+          We welcome any contribution in terms of both new explainability methods and new
+          evaluation metrics. Please check
+          <a href="https://github.com/DS3Lab/graphframex.web/wiki">here</a>
+          for more details.
+          <br />
+          <br />
+          Feel free to contact us at
+          <a href="mailto:kenza.amara@ai.ethz.ch">kenza.amara@ai.ethz.ch</a>
+        </div>
+        <div class="box2">
+          <p>Maintainers</p>
+          <div class="divider">
+            <hr />
+          </div>
+          <ul>
+            <li>
+              <a href="https://k-amara.github.io" target="_blank">Kenza Amara
+              </a>
+              <a href="https://k-amara.github.io"><i class="fas fa-globe"></i></a>
+              <a href="https://github.com/k-amara"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?user=e4wlh1AAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+            </li>
+            <li>
+              <a href="https://cs.stanford.edu/people/rexy/" target="_blank">Zhitao (Rex) Ying</a>
+              <a href="https://cs.stanford.edu/people/rexy/"><i class="fas fa-globe"></i></a>
+              <a href="https://github.com/RexYing"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com.au/citations?user=6fqNXooAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+            </li>
+            <li>
+              <a href="https://ds3lab.inf.ethz.ch/members/ce-zhang.html" target="_blank">Ce Zhang</a>
+              <a href="https://ds3lab.inf.ethz.ch/members/ce-zhang.html"><i class="fas fa-globe"></i></a>
+              <a href="https://github.com/DS3Lab"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.ch/citations?user=GkXqbmMAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <hr class="bottomrule" />
+
+  <footer>
+    <small>&copy; 2022, GraphFramEx;
+      <a href="https://icons8.com/icon/100413/access">Icons from Icons8</a></small>
+  </footer>
+
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      myFunction();
+    };
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    $("#div_real_leaderboard_full_data").load("fig/real_leaderboard_full_data.html");
+  </script>
+  <script>
+    $('select.fig-options').change(function() {
+    var filename = './fig/type_expl_'+$('#chooseFocus').val() + '_' + $('#chooseMask').val() + '.png';
+    $('#img-change').prop('src', filename);
+    });
+  </script>
+</body>
