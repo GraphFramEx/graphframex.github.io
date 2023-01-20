@@ -177,21 +177,69 @@
           Available Leaderboards
         </u>
       </div>
-      <a class="btn btn-secondary" href="#div_real_leaderboard_full_data">Real dataset</a>
+      <a class="btn btn-secondary" href="#div_cora_heading">Cora</a>
+      <a class="btn btn-secondary" href="#div_citeseer_heading">CiteSeer</a>
+      <a class="btn btn-secondary" href="#div_pubmed_heading">Pubmed</a>
+      <a class="btn btn-secondary" href="#div_cornell_heading">Cornell</a>
+      <a class="btn btn-secondary" href="#div_texas_heading">Texas</a>
+      <a class="btn btn-secondary" href="#div_wisconsin_heading">Wisconsin</a>
+      <a class="btn btn-secondary" href="#div_facebook_heading">Facebook</a>
+      <a class="btn btn-secondary" href="#div_actor_heading">Actor</a>
+      <a class="btn btn-secondary" href="#div_squirrel_heading">Squirrel (Wikipedia)</a>
+      <a class="btn btn-secondary" href="#div_chameleon_heading">Chameleon (Wikipedia)</a>
       </div>
 
 
-    <section class="container" id="div_real_leaderboard_full_data">
+    <section class="container" id="div_real_cora_heading">
       <div class="heading">
         <p>
 <!--          <div style="opacity:0;">1<br>1<br>1<br>1</div> &lt;!&ndash; Needed to introduce a margin for the navigation bar between leaderboards &ndash;&gt;-->
           Leaderboard:
-          <span class="heading-math">Real data</span>,
-          focus: Phenomenon, mask: Hard, size: 10 edges, Avg over all datasets
+          <span class="heading-math">Cora</span>,
+          focus: Phenomenon, mask: Hard, size: 10 edges, dataset: Cora
         </p>
       </div>
 
-      <div id="div_real_leaderboard_full_data"></div>
+      <div id="div_real_cora"></div>
+    </section>
+
+    <section class="container" id="div_real_cornell_heading">
+      <div class="heading">
+        <p>
+<!--          <div style="opacity:0;">1<br>1<br>1<br>1</div> &lt;!&ndash; Needed to introduce a margin for the navigation bar between leaderboards &ndash;&gt;-->
+          Leaderboard:
+          <span class="heading-math">Cornell</span>,
+          focus: Phenomenon, mask: Hard, size: 10 edges, dataset: Cornell
+        </p>
+      </div>
+      
+      <div id="div_real_cornell"></div>
+    </section>
+
+    <section class="container" id="div_real_facebook_heading">
+      <div class="heading">
+        <p>
+<!--          <div style="opacity:0;">1<br>1<br>1<br>1</div> &lt;!&ndash; Needed to introduce a margin for the navigation bar between leaderboards &ndash;&gt;-->
+          Leaderboard:
+          <span class="heading-math">Facebook</span>,
+          focus: Phenomenon, mask: Hard, size: 10 edges, dataset: FacebookPageToPage
+        </p>
+      </div>
+      
+      <div id="div_real_facebook"></div>
+    </section>
+
+    <section class="container" id="div_real_chameleon_heading">
+      <div class="heading">
+        <p>
+<!--          <div style="opacity:0;">1<br>1<br>1<br>1</div> &lt;!&ndash; Needed to introduce a margin for the navigation bar between leaderboards &ndash;&gt;-->
+          Leaderboard:
+          <span class="heading-math">Chameleon</span>,
+          focus: Phenomenon, mask: Hard, size: 10 edges, dataset: Chameleon (Wikipedia)
+        </p>
+      </div>
+      
+      <div id="div_real_chameleon"></div>
     </section>
 
     
@@ -295,7 +343,17 @@
     }
   </script>
   <script>
-    $("#div_real_leaderboard_full_data").load("./leaderboards/real_leaderboard_full_data.html");
+    $("#div_cora").load("./leaderboard/html/cora.html");
+    $("#div_cornell").load("./leaderboard/html/cornell.html");
+    $("#div_chameleon").load("./leaderboard/html/chameleon.html");
+    $("#div_squirrel").load("./leaderboard/html/squirrel.html");
+    $("#div_facebook").load("./leaderboard/html/facebook.html");
+    $("#div_texas").load("./leaderboard/html/texas.html");
+    $("#div_wisonsin").load("./leaderboard/html/wisconsin.html");
+    $("#div_pubmed").load("./leaderboard/html/pubmed.html");
+    $("#div_actor").load("./leaderboard/html/actor.html");
+    $("#div_citeseer").load("./leaderboard/html/citeseer.html");
+    $("#div_real_leaderboard_full_data").load("./leaderboard/html/real_leaderboard_full_data.html");
   </script>
   <script>
     $('select.fig-options').change(function() {

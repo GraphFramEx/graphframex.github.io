@@ -2,6 +2,8 @@ import json
 from argparse import ArgumentParser
 from pathlib import Path
 from typing import Union
+import pandas as pd 
+import numpy as np
 
 from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
 
@@ -48,24 +50,19 @@ def generate_leaderboard(dataset: str,
     template = env.get_template('leaderboard/leaderboard.html.j2')
 
     result = template.render(dataset=dataset, models=models)
-    print(result)
+    
+    html_path = f'leaderboard/html/{dataset}.html'
+    Func = open(html_path, 'w')
+    Func.write(result)
+    Func.close()
+
     return result
 
 
 if __name__ == "__main__":
-    parser = ArgumentParser()
-    parser.add_argument(
-        "--dataset",
-        type=str,
-        default="cora",
-        help="The dataset of the desired leaderboard."
-    )
-    parser.add_argument(
-        "--models_folder",
-        type=str,
-        default="leaderboard/results/topk_10",
-        help="The base folder of the model jsons (e.g. our 'model_info' folder)"
-    )
-    args = parser.parse_args()
-
-    generate_leaderboard(args.dataset, args.models_folder)
+    
+    models_folder = "leaderboard/results/topk_10"
+    df = pd.read_csv('leaderboard/nc_real_topk_5expe.csv')
+    list_datasets = np.unique(df.dataset)
+    for dataset in list_datasets:
+        generate_leaderboard(dataset, models_folder)
