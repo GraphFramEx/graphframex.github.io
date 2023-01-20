@@ -332,18 +332,19 @@ section .heading {
 }
 
 /* Leaderboard table css */
-table .arch {
-  width: 13%;
-}
 
-table .venue {
-  width: 10%;
+table .paper {
+  width: 20%;
 }
 table .rank {
-  width: 5%;
+  width: 3%;
 }
 table .method {
-  width: 40%;
+  width: 6%;
+}
+
+table .charact {
+  width: 10%;
 }
 table .extra-data {
   width: 6%;
