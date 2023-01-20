@@ -333,27 +333,11 @@ section .heading {
 
 /* Leaderboard table css */
 
-table .paper {
-  width: 35%;
-}
 table .rank {
   width: 5%;
 }
-table .year {
-  width: 10%;
-}
-table .method {
-  width: 15%;
-}
-
-table .charact {
-  width: 15%;
-}
-table .fid {
-  width: 10%;
-}
-table .fidinv {
-  width: 10%;
+table .paper {
+  width: 40%;
 }
 table .extra-data {
   width: 6%;
