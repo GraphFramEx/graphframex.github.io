@@ -3,12 +3,12 @@ from argparse import ArgumentParser
 from pathlib import Path
 from typing import Union
 
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
 
 
 
 def generate_leaderboard(dataset: str,
-                         models_folder: str = "model_info") -> str:
+                         models_folder: str = "leaderboard/results/topk") -> str:
     """Prints the HTML leaderboard starting from the .json results.
 
     The result is a <table> that can be put directly into the RobustBench index.html page,
@@ -19,8 +19,8 @@ def generate_leaderboard(dataset: str,
     {
       "link": "https://arxiv.org/abs/2003.09461",
       "name": "Adversarial Robustness on In- and Out-Distribution Improves Explainability",
-      "dataset": "cifar10",
-      "eps": "0.5",
+      "year": 2019
+      "dataset": "cora",
       "charact": "0.8",
       "fid": "0.3",
       "fidinv": "0.01"
@@ -34,16 +34,18 @@ def generate_leaderboard(dataset: str,
     :return: The resulting HTML table.
     """
 
-    folder = Path(models_folder)
+    folder = Path(models_folder) / dataset
+    print(folder)
     for model_path in folder.glob("*.json"):
         with open(model_path) as fp:
             models = json.load(fp)
     models.sort(key=lambda x: x['charact'], reverse=True)
 
-    env = Environment(loader=PackageLoader('graphframex', 'leaderboard'),
+    templateLoader = FileSystemLoader(searchpath="./")
+    env = Environment(loader=templateLoader,
                       autoescape=select_autoescape(['html', 'xml']))
 
-    template = env.get_template('leaderboard.html.j2')
+    template = env.get_template('leaderboard/leaderboard.html.j2')
 
     result = template.render(dataset=dataset, models=models)
     print(result)
@@ -61,7 +63,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--models_folder",
         type=str,
-        default="model_info",
+        default="leaderboard/results/topk_10",
         help="The base folder of the model jsons (e.g. our 'model_info' folder)"
     )
     args = parser.parse_args()

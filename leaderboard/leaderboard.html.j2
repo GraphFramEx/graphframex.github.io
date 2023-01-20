@@ -22,9 +22,9 @@
       <td class="methoddt">
         <a href="{{ model.link }}" target="_blank">{{ model.name }}</a>
       </td>
-      <td class="characttd">{{ model.charact }}%</td>
-      <td class="fidtd">{{ model.fid }}%</td>
-      <td class="fidinvtd">{{ model.fidinv }}%</td>
+      <td class="characttd">{{ model.charact }}</td>
+      <td class="fidtd">{{ model.fid }}</td>
+      <td class="fidinvtd">{{ model.fidinv }}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -32,7 +32,7 @@
 <script>
   $(document).ready(function () {
     $("#{{ dataset }}_leaderboard").DataTable({
-      lengthMenu: [15, 25, 50, 75, 100],
+      lengthMenu: [5, 10, 15],
       drawCallback: function (settings) {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
       },

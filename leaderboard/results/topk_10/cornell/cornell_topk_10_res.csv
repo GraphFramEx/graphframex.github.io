@@ -1,0 +1,12 @@
+index,explainer_name,dataset,topk,charact,fid,fidinv,link,paper,year,method
+0,basic_gnnexplainer,cornell,10.0,0.16,0.09,0.2699999999999999,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
+1,distance,cornell,10.0,0.223,0.126,0.03,https://arxiv.org/pdf/2002.05257.pdf,Shortest Path Distance Approximation using Deep learning Techniques,2020,Distance
+2,gnnexplainer,cornell,10.0,0.237,0.136,0.0819999999999999,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
+3,gradcam,cornell,10.0,0.486,0.326,0.046,https://openaccess.thecvf.com/content_CVPR_2019/papers/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.pdf,Explainability Methods for Graph Convolutional Neural Networks,2019,Grad-CAM
+4,ig,cornell,10.0,0.469,0.324,0.152,https://arxiv.org/pdf/1703.01365.pdf,Axiomatic Attribution for Deep Networks,2017,Integrated Gradient
+5,occlusion,cornell,10.0,0.509,0.348,0.054,https://arxiv.org/pdf/1311.2901.pdf,Visualizing and understanding convolutional networks,2014,Occlusion
+6,pagerank,cornell,10.0,0.524,0.358,0.02,http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf,The PageRank Citation Ranking: Bringing Order to the Web,1998,PageRank
+7,pgexplainer,cornell,10.0,0.256,0.17,0.482,https://arxiv.org/pdf/2011.04573.pdf,Parameterized Explainer for Graph Neural Network,2020,PGExplainer
+8,pgmexplainer,cornell,10.0,0.287,0.168,0.016,https://proceedings.neurips.cc/paper/2020/file/8fb134f258b1f7865a6ab2d935a897c9-Paper.pdf,PGM-Explainer: Probabilistic Graphical Model Explanations for Graph Neural Networks,2020,PGM-Explainer
+9,sa,cornell,10.0,0.469,0.33,0.188,https://arxiv.org/pdf/1905.13686.pdf,Explainability Techniques for Graph Convolutional Networks,2019,Saliency
+10,subgraphx,cornell,10.0,0.077,0.04,0.06,https://arxiv.org/pdf/2102.05152.pdf,On Explainability of Graph Neural Networks via Subgraph Exploration,2021,SubgraphX

@@ -1,0 +1,12 @@
+index,explainer_name,dataset,topk,charact,fid,fidinv,link,paper,year,method
+0,basic_gnnexplainer,pubmed,10.0,0.189,0.1139999999999999,0.454,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
+1,distance,pubmed,10.0,0.374,0.242,0.18,https://arxiv.org/pdf/2002.05257.pdf,Shortest Path Distance Approximation using Deep learning Techniques,2020,Distance
+2,gnnexplainer,pubmed,10.0,0.417,0.292,0.272,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
+3,gradcam,pubmed,10.0,0.601,0.458,0.126,https://openaccess.thecvf.com/content_CVPR_2019/papers/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.pdf,Explainability Methods for Graph Convolutional Neural Networks,2019,Grad-CAM
+4,ig,pubmed,10.0,0.624,0.54,0.26,https://arxiv.org/pdf/1703.01365.pdf,Axiomatic Attribution for Deep Networks,2017,Integrated Gradient
+5,occlusion,pubmed,10.0,0.627,0.504,0.1699999999999999,https://arxiv.org/pdf/1311.2901.pdf,Visualizing and understanding convolutional networks,2014,Occlusion
+6,pagerank,pubmed,10.0,0.616,0.474,0.12,http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf,The PageRank Citation Ranking: Bringing Order to the Web,1998,PageRank
+7,pgexplainer,pubmed,10.0,0.162,0.096,0.476,https://arxiv.org/pdf/2011.04573.pdf,Parameterized Explainer for Graph Neural Network,2020,PGExplainer
+8,pgmexplainer,pubmed,10.0,0.477,0.33,0.1379999999999999,https://proceedings.neurips.cc/paper/2020/file/8fb134f258b1f7865a6ab2d935a897c9-Paper.pdf,PGM-Explainer: Probabilistic Graphical Model Explanations for Graph Neural Networks,2020,PGM-Explainer
+9,sa,pubmed,10.0,0.666,0.72,0.38,https://arxiv.org/pdf/1905.13686.pdf,Explainability Techniques for Graph Convolutional Networks,2019,Saliency
+10,subgraphx,pubmed,10.0,0.21,0.12,0.1599999999999999,https://arxiv.org/pdf/2102.05152.pdf,On Explainability of Graph Neural Networks via Subgraph Exploration,2021,SubgraphX
