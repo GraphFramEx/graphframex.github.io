@@ -339,6 +339,9 @@ table .rank {
 table .paper {
   width: 40%;
 }
+table .charact {
+  width: 15%;
+}
 table .extra-data {
   width: 6%;
 }
@@ -354,7 +357,7 @@ table .aa_3d {
 
 table .aatd,
 .catd,
-.methoddt,
+.paperdt,
 .aa-extd,
 .aatd_3d {
   font-size: 1.1em;
