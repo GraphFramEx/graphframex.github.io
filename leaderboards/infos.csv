@@ -1,0 +1,12 @@
+link,paper,year,method,explainer_name
+https://arxiv.org/pdf/1905.13686.pdf,Explainability Techniques for Graph Convolutional Networks,2019,Saliency,sa
+https://arxiv.org/pdf/1311.2901.pdf,Visualizing and understanding convolutional networks,2014,Occlusion,occlusion
+https://openaccess.thecvf.com/content_CVPR_2019/papers/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.pdf,Explainability Methods for Graph Convolutional Neural Networks,2019,Grad-CAM,gradcam
+http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf,The PageRank Citation Ranking: Bringing Order to the Web,1998,PageRank,pagerank
+https://arxiv.org/pdf/1703.01365.pdf,Axiomatic Attribution for Deep Networks,2017,Integrated Gradient,ig
+https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer,gnnexplainer
+https://proceedings.neurips.cc/paper/2020/file/8fb134f258b1f7865a6ab2d935a897c9-Paper.pdf,PGM-Explainer: Probabilistic Graphical Model Explanations for Graph Neural Networks,2020,PGM-Explainer,pgmexplainer
+https://arxiv.org/pdf/2002.05257.pdf,Shortest Path Distance Approximation using Deep learning Techniques,2020,Distance,distance
+https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer,basic_gnnexplainer
+https://arxiv.org/pdf/2011.04573.pdf,Parameterized Explainer for Graph Neural Network,2020,PGExplainer,pgexplainer
+https://arxiv.org/pdf/2102.05152.pdf,On Explainability of Graph Neural Networks via Subgraph Exploration,2021,SubgraphX,subgraphx

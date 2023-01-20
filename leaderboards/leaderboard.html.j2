@@ -1,0 +1,44 @@
+<table id="{{ dataset }}_leaderboard" class="datatable" style="width: 100%">
+  <thead>
+    <tr>
+      <th class="rank">Rank</th>
+      <th class="paper">Paper</th>
+      <th class="year">Year</th>
+      <th class="method">Method</th>
+      <th class="charact">
+        Characterization<br />
+        score
+      </th>
+      <th class="fid">Fidelity+</th>
+      <th class="fidinv">Fidelity-</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for model in models %}
+    <tr>
+      <td class="ranktd">{{ loop.index }}</td>
+      <td class="papertd">{{ model.paper }}</td>
+      <td class="yeartd">{{ model.year }}</td>
+      <td class="methoddt">
+        <a href="{{ model.link }}" target="_blank">{{ model.name }}</a>
+      </td>
+      <td class="characttd">{{ model.charact }}%</td>
+      <td class="fidtd">{{ model.fid }}%</td>
+      <td class="fidinvtd">{{ model.fidinv }}%</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<script>
+  $(document).ready(function () {
+    $("#{{ dataset }}_leaderboard").DataTable({
+      lengthMenu: [15, 25, 50, 75, 100],
+      drawCallback: function (settings) {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      },
+      language: {
+        searchPlaceholder: "Papers, methods",
+      },
+    });
+  });
+</script>
