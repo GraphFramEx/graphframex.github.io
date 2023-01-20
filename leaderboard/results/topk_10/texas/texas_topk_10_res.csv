@@ -1,12 +1,12 @@
 index,explainer_name,dataset,topk,charact,fid,fidinv,link,paper,year,method
 0,basic_gnnexplainer,texas,10.0,0.148,0.082,0.266,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
-1,distance,texas,10.0,0.229,0.1299999999999999,0.028,https://arxiv.org/pdf/2002.05257.pdf,Shortest Path Distance Approximation using Deep learning Techniques,2020,Distance
+1,distance,texas,10.0,0.229,0.13,0.028,https://arxiv.org/pdf/2002.05257.pdf,Shortest Path Distance Approximation using Deep learning Techniques,2020,Distance
 2,gnnexplainer,texas,10.0,0.265,0.154,0.062,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
 3,gradcam,texas,10.0,0.446,0.294,0.076,https://openaccess.thecvf.com/content_CVPR_2019/papers/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.pdf,Explainability Methods for Graph Convolutional Neural Networks,2019,Grad-CAM
 4,ig,texas,10.0,0.404,0.278,0.262,https://arxiv.org/pdf/1703.01365.pdf,Axiomatic Attribution for Deep Networks,2017,Integrated Gradient
-5,occlusion,texas,10.0,0.469,0.3139999999999999,0.074,https://arxiv.org/pdf/1311.2901.pdf,Visualizing and understanding convolutional networks,2014,Occlusion
+5,occlusion,texas,10.0,0.469,0.314,0.074,https://arxiv.org/pdf/1311.2901.pdf,Visualizing and understanding convolutional networks,2014,Occlusion
 6,pagerank,texas,10.0,0.473,0.312,0.026,http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf,The PageRank Citation Ranking: Bringing Order to the Web,1998,PageRank
 7,pgexplainer,texas,10.0,0.0,0.0,0.0,https://arxiv.org/pdf/2011.04573.pdf,Parameterized Explainer for Graph Neural Network,2020,PGExplainer
 8,pgmexplainer,texas,10.0,0.266,0.154,0.024,https://proceedings.neurips.cc/paper/2020/file/8fb134f258b1f7865a6ab2d935a897c9-Paper.pdf,PGM-Explainer: Probabilistic Graphical Model Explanations for Graph Neural Networks,2020,PGM-Explainer
-9,sa,texas,10.0,0.499,0.356,0.1679999999999999,https://arxiv.org/pdf/1905.13686.pdf,Explainability Techniques for Graph Convolutional Networks,2019,Saliency
+9,sa,texas,10.0,0.499,0.356,0.168,https://arxiv.org/pdf/1905.13686.pdf,Explainability Techniques for Graph Convolutional Networks,2019,Saliency
 10,subgraphx,texas,10.0,0.181,0.1,0.04,https://arxiv.org/pdf/2102.05152.pdf,On Explainability of Graph Neural Networks via Subgraph Exploration,2021,SubgraphX

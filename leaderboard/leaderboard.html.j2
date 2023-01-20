@@ -17,11 +17,11 @@
     {% for model in models %}
     <tr>
       <td class="ranktd">{{ loop.index }}</td>
-      <td class="papertd">{{ model.paper }}</td>
-      <td class="yeartd">{{ model.year }}</td>
-      <td class="methoddt">
-        <a href="{{ model.link }}" target="_blank">{{ model.name }}</a>
+      <td class="paperdt">
+        <a href="{{ model.link }}" target="_blank">{{ model.paper }}</a>
       </td>
+      <td class="yeartd">{{ model.year }}</td>
+      <td class="methodtd">{{ model.method }}</td>
       <td class="characttd">{{ model.charact }}</td>
       <td class="fidtd">{{ model.fid }}</td>
       <td class="fidinvtd">{{ model.fidinv }}</td>

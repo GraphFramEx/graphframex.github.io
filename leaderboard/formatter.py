@@ -55,7 +55,7 @@ def filter(df, focus='phenomenon', hard_mask=True, topk=10):
         df_sub = df_sub[['explainer_name', 'dataset', 'topk', 'charact', 'fid', 'fidinv']]
     else:
         raise ValueError("Unknown focus of the explanation")
-    df_sub['charact'] = df_sub['charact'].apply(lambda x: round(x, 3))
+    df_sub[['charact','fid','fidinv']] = df_sub[['charact','fid','fidinv']].apply(lambda x: round(x, 3))
     return df_sub
 
 

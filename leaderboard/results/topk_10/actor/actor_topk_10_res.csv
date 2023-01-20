@@ -1,12 +1,12 @@
 index,explainer_name,dataset,topk,charact,fid,fidinv,link,paper,year,method
 0,basic_gnnexplainer,actor,10.0,0.256,0.152,0.182,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
-1,distance,actor,10.0,0.277,0.1639999999999999,0.1,https://arxiv.org/pdf/2002.05257.pdf,Shortest Path Distance Approximation using Deep learning Techniques,2020,Distance
-2,gnnexplainer,actor,10.0,0.237,0.1379999999999999,0.162,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
+1,distance,actor,10.0,0.277,0.164,0.1,https://arxiv.org/pdf/2002.05257.pdf,Shortest Path Distance Approximation using Deep learning Techniques,2020,Distance
+2,gnnexplainer,actor,10.0,0.237,0.138,0.162,https://arxiv.org/pdf/1903.03894.pdf,GNNExplainer: Generating Explanations for Graph Neural Networks,2019,GNNExplainer
 3,gradcam,actor,10.0,0.326,0.198,0.084,https://openaccess.thecvf.com/content_CVPR_2019/papers/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.pdf,Explainability Methods for Graph Convolutional Neural Networks,2019,Grad-CAM
 4,ig,actor,10.0,0.395,0.26,0.18,https://arxiv.org/pdf/1703.01365.pdf,Axiomatic Attribution for Deep Networks,2017,Integrated Gradient
 5,occlusion,actor,10.0,0.305,0.184,0.112,https://arxiv.org/pdf/1311.2901.pdf,Visualizing and understanding convolutional networks,2014,Occlusion
 6,pagerank,actor,10.0,0.325,0.198,0.088,http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf,The PageRank Citation Ranking: Bringing Order to the Web,1998,PageRank
 7,pgexplainer,actor,10.0,0.367,0.242,0.242,https://arxiv.org/pdf/2011.04573.pdf,Parameterized Explainer for Graph Neural Network,2020,PGExplainer
-8,pgmexplainer,actor,10.0,0.266,0.1559999999999999,0.102,https://proceedings.neurips.cc/paper/2020/file/8fb134f258b1f7865a6ab2d935a897c9-Paper.pdf,PGM-Explainer: Probabilistic Graphical Model Explanations for Graph Neural Networks,2020,PGM-Explainer
-9,sa,actor,10.0,0.417,0.2799999999999999,0.18,https://arxiv.org/pdf/1905.13686.pdf,Explainability Techniques for Graph Convolutional Networks,2019,Saliency
+8,pgmexplainer,actor,10.0,0.266,0.156,0.102,https://proceedings.neurips.cc/paper/2020/file/8fb134f258b1f7865a6ab2d935a897c9-Paper.pdf,PGM-Explainer: Probabilistic Graphical Model Explanations for Graph Neural Networks,2020,PGM-Explainer
+9,sa,actor,10.0,0.417,0.28,0.18,https://arxiv.org/pdf/1905.13686.pdf,Explainability Techniques for Graph Convolutional Networks,2019,Saliency
 10,subgraphx,actor,10.0,0.33,0.2,0.05,https://arxiv.org/pdf/2102.05152.pdf,On Explainability of Graph Neural Networks via Subgraph Exploration,2021,SubgraphX
