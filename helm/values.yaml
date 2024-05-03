@@ -1,0 +1,65 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+app:
+  image:
+    repository: null
+    tag: latest
+    pullPolicy: Always
+
+  replicaCount: 1
+  port: 8080
+
+  health: "/"
+  updateStrategy: Recreate
+
+  readinessProbe: |
+    httpGet:
+      path: {{ .Values.app.health }}
+      {{- if eq (typeOf .Values.app.port) "[]interface {}" }}
+      port: {{ first .Values.app.port }}
+      {{- else }}
+      port: {{ .Values.app.port }}
+      {{- end }}
+    initialDelaySeconds: 3
+    timeoutSeconds: 5
+    periodSeconds: 5
+    failureThreshold: 3
+    successThreshold: 1
+
+  livenessProbe: |
+    httpGet:
+      path: {{ .Values.app.health }}
+      {{- if eq (typeOf .Values.app.port) "[]interface {}" }}
+      port: {{ first .Values.app.port }}
+      {{- else }}
+      port: {{ .Values.app.port }}
+      {{- end }}
+    initialDelaySeconds: 6
+    timeoutSeconds: 5
+    periodSeconds: 5
+    failureThreshold: 4
+    successThreshold: 1
+
+  requests:
+    cpu: 100m
+    memory: 64Mi
+  limits:
+    cpu: 300m
+    memory: 512Mi
+
+  pvc:
+    enabled: false
+
+  ingress:
+    enabled: true
+    url: null
+    auth:
+      enabled: false
+      prompt: This website is password protected. Please enter a username and password.
+      secret: basic-auth
+    internal:
+      enabled: false
+      whitelistSourceRange: 134.34.225.45/32
+    extraAnnotations: |
+        nginx.ingress.kubernetes.io/proxy-body-size: 8m
